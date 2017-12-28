@@ -201,7 +201,7 @@ footer a:hover:after {
 /***********Basic Pages*********/
 
 .basic {
-    margin: 80px;
+    margin: 70px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
