@@ -71,13 +71,15 @@ nav ul {
 /*---B O D Y---*/
 
 body {
+
+    width: 100%;
     cursor: default;
     height: auto;
     display: grid;
     background-color: black;
     color: white;
     font-family: 'Sanchez', serif;
-    font-size: 3em;
+    font-size: 2.6em;
 }
 
 
@@ -93,7 +95,6 @@ body {
 article {
     height: auto;
     width: auto;
-    padding-top: 10px;
     padding-bottom: 10px;
 }
 
@@ -140,11 +141,11 @@ footer a:hover:after {
 
 .imgMe {
     text-align: center;
-    margin-top: 20px;
+
 }
 
 .imgMe img {
-    height: 12em;
+    width: 50%;
 }
 
 .div1 {
@@ -152,7 +153,7 @@ footer a:hover:after {
     margin-right: 100px;
     margin-bottom: 100px;
     height: auto;
-    width: auto;
+
 }
 
 .div1 p {
@@ -165,11 +166,11 @@ footer a:hover:after {
 
 .portfolioClass {
     color: black;
-
     width: 100%;
 }
 
 .portfolioPage {
+    width: auto;
     margin: 130px 80px 0px 80px;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -178,6 +179,7 @@ footer a:hover:after {
 }
 
 .portfolioPage h2 {
+    font-family: 'Sanchez', serif;
     font-size: 40px;
     text-align: center;
 }
@@ -194,38 +196,41 @@ footer a:hover:after {
     position: fixed;
     background-color: black;
 }
-.portfolioFooter{
+
+.portfolioFooter {
     background-color: black;
 }
 
 .homeNav {
-    position: fixed;
+
     background-color: black;
 }
 
-.themes{
+.themes {
     background-color: black;
     opacity: 0.9;
     padding: 15px;
     transition: all .3s ease;
 }
 
-.themes:hover{
+.themes:hover {
     opacity: 1;
     transform: translateY(-7px)
 }
 
-.themes a:link{
+.themes a:link {
     text-decoration: none;
+    font-weight: 700;
     color: darkred;
 }
-.themes a:visited{
+
+.themes a:visited {
     color: darkred;
 }
 
 
 .theme3,
-.theme4{
+.theme4 {
     margin-bottom: 30px;
 }
 
@@ -239,12 +244,10 @@ footer a:hover:after {
     grid-gap: 15px;
 }
 
-.basic h2{
-    }
 
 .basic h2 {
     color: black;
-    font-family: 'Libre Baskerville', serif;
+    font-family: 'Sanchez', serif;
     font-size: 30px;
     text-align: left;
 }
@@ -258,11 +261,15 @@ footer a:hover:after {
     padding-top: 1em;
 }
 
-.basicImg {
-    height: 7em;
+.basic a{
+    font-weight: 700;
 }
 
-.basicPrint{
+.basicImg {
+    width: 80%;
+}
+
+.basicPrint {
     justify-content: center;
     text-align: center;
 }
@@ -286,7 +293,7 @@ footer a:hover:after {
 
 }
 
-.buttonBack:hover{
+.buttonBack:hover {
     background-color: #fefefe;
     color: black;
     border-color: darkred;
@@ -300,12 +307,12 @@ form {
     margin-top: 30px;
 }
 
-.basicTxt a:link{
+.basicTxt a:link {
     color: darkred;
     text-decoration: none;
 }
 
-.basicTxt a:visited{
+.basicTxt a:visited {
     color: darkred;
 }
 
@@ -420,6 +427,7 @@ form {
     }
     to {
         opacity: 1;
+        background-color: black;
     }
 }
 
@@ -435,153 +443,163 @@ form {
 
 /**********Mobile Version***************/
 
+@media only screen and (max-width: 900px) {
 
-@media only screen and (max-width: 900px){
 
-
-    .theme1{
+    .theme1 {
         grid-area: th1;
         grid-row: 1;
     }
-    .theme2{
+    .theme2 {
         grid-area: th2;
         grid-row: 2;
     }
-    .theme3{
+    .theme3 {
         grid-area: th3;
         grid-row: 3;
     }
-    .theme4{
+    .theme4 {
         grid-area: th4;
         grid-row: 4;
     }
 
-    portfolioPage{
+    body {
+        font-size: 2em;
+    }
+    .div1 {
+        margin: 10px;
+    }
+    nav .left {
+        float: left;
+        left: 10px;
+    }
+
+    nav .right {
+        float: right;
+        right: 10px;
+    }
+    .imgMe>img{
+        min-width: 100%;
+    }
+
+    .portfolioPage {
+        margin: 130px 10px 10px 10px;
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: auto;
-        grid-template-areas:
-            "th1"
-            "th2"
-            "th3"
-            "th4";
+        grid-template-areas: "th1" "th2" "th3" "th4";
         grid-auto-flow: column;
     }
 
-    .basicWeb1{
+    .basicWeb1 {
         grid-area: bWeb1;
         grid-row: 1;
     }
-    .basicWeb2{
+    .basicWeb2 {
         grid-area: bWeb2;
         grid-row: 2;
     }
-    .basicWeb3{
+    .basicWeb3 {
         grid-area: bWeb3;
         grid-row: 3;
     }
-    .basicWeb4{
+    .basicWeb4 {
         grid-area: bWeb4;
         grid-row: 4;
     }
-    .basicWeb5{
+    .basicWeb5 {
         grid-area: bWeb5;
         grid-row: 5;
     }
-    .basicWeb6{
+    .basicWeb6 {
         grid-area: bWeb6;
         grid-row: 6;
     }
-    .basic{
+    .basic {
+        margin: 10px;
         grid-template-columns: 1fr;
         grid-template-rows: auto;
         grid-gap: 10px;
-        grid-template-areas:
-            "bWeb1"
-            "bWeb2"
-            "bWeb3"
-            "bWeb4"
-            "bWeb5"
-            "bWeb6";
+        grid-template-areas: "bWeb1" "bWeb2" "bWeb3" "bWeb4" "bWeb5" "bWeb6";
     }
 
-    .basicAni1{
+    .basicAni1 {
         grid-area: bA1;
         grid-row: 1;
     }
-    .basicAni2{
+    .basicAni2 {
         grid-area: bA2;
         grid-row: 2;
     }
-    .basicAni3{
+    .basicAni3 {
         grid-area: bA3;
         grid-row: 3;
     }
-    .basicAni4{
+    .basicAni4 {
         grid-area: bA4;
         grid-row: 4;
     }
-    .basicAni5{
+    .basicAni5 {
         grid-area: bA5;
         grid-row: 5;
     }
-    .basicAni6{
+    .basicAni6 {
         grid-area: bA6;
         grid-row: 6;
     }
-    .basicAni7{
+    .basicAni7 {
         grid-area: bA7;
         grid-row: 7;
     }
-    .basicAni8{
+    .basicAni8 {
         grid-area: bA8;
         grid-row: 8;
     }
-    .basicAni9{
+    .basicAni9 {
         grid-area: bA9;
         grid-row: 9;
     }
-    .basicAni10{
+    .basicAni10 {
         grid-area: bA10;
         grid-row: 10;
     }
-    .basicAni11{
+    .basicAni11 {
         grid-area: bA11;
         grid-row: 11;
     }
-    .basicAni12{
+    .basicAni12 {
         grid-area: bA12;
         grid-row: 12;
     }
-    .basicAni13{
+    .basicAni13 {
         grid-area: bA13;
         grid-row: 13;
     }
-    .basicAni14{
+    .basicAni14 {
         grid-area: bA14;
         grid-row: 14;
     }
-    .basicAni15{
+    .basicAni15 {
         grid-area: bA15;
         grid-row: 15;
     }
-    .basicAni16{
+    .basicAni16 {
         grid-area: bA16;
         grid-row: 16;
     }
-    .basicAni17{
+    .basicAni17 {
         grid-area: bA17;
         grid-row: 17;
     }
-    .basicAni18{
+    .basicAni18 {
         grid-area: bA18;
         grid-row: 18;
     }
-    .basicAni19{
+    .basicAni19 {
         grid-area: bA19;
         grid-row: 19;
     }
-    .basicAni20{
+    .basicAni20 {
         grid-area: bA20;
         grid-row: 20;
     }
