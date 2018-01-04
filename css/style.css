@@ -10,6 +10,7 @@
 
 nav {
     width: 100%;
+    z-index: 0;
 }
 
 nav li {
@@ -25,17 +26,14 @@ nav a {
 
 nav .left {
     float: left;
-    left: 80px;
+    left: 100px;
 }
 
 nav .right {
     float: right;
-    right: 80px;
+    right: 100px;
 }
 
-nav a:active {
-    transform: translateY(6px);
-}
 
 nav a:visited {
     color: inherit;
@@ -71,7 +69,7 @@ nav ul {
 /*---B O D Y---*/
 
 body {
-
+    z-index: 100;
     width: 100%;
     cursor: default;
     height: auto;
@@ -93,6 +91,8 @@ body {
 }
 
 article {
+    z-index: 100;
+    display: grid;
     height: auto;
     width: auto;
     padding-bottom: 10px;
@@ -100,6 +100,7 @@ article {
 
 footer,
 header {
+    z-index: 0;
     font-family: 'Quicksand', sans-serif;
     font-size: 25px;
     font-weight: 700;
@@ -145,7 +146,7 @@ footer a:hover:after {
 }
 
 .imgMe img {
-    width: 50%;
+    width: 45%;
 }
 
 .div1 {
@@ -171,7 +172,7 @@ footer a:hover:after {
 
 .portfolioPage {
     width: auto;
-    margin: 130px 80px 0px 80px;
+    margin: 130px 100px 0px 100px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 20px;
@@ -202,15 +203,16 @@ footer a:hover:after {
 }
 
 .homeNav {
-
     background-color: black;
 }
 
 .themes {
     background-color: black;
     opacity: 0.9;
-    padding: 15px;
     transition: all .3s ease;
+}
+div.themes{
+    margin-bottom: 5%;
 }
 
 .themes:hover {
@@ -464,7 +466,7 @@ form {
     }
 
     body {
-        font-size: 2em;
+        font-size: 1.5em;
     }
     .div1 {
         margin: 10px;
@@ -479,7 +481,7 @@ form {
         right: 10px;
     }
     .imgMe>img{
-        min-width: 100%;
+        min-width: 12em;
     }
 
     .portfolioPage {
@@ -490,6 +492,19 @@ form {
         grid-template-areas: "th1" "th2" "th3" "th4";
         grid-auto-flow: column;
     }
+    footer,
+    header{
+        font-size: 20px;
+    }
+
+
+    nav a:after{
+        all: unset;
+    }
+    nav a:hover:after{
+        all: unset;
+    }
+
 
     .basicWeb1 {
         grid-area: bWeb1;
