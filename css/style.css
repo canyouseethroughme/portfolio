@@ -106,9 +106,14 @@ header {
     font-weight: 700;
 }
 
+#footer{
+    margin-bottom: 1em;
+}
+
 footer {
+
     text-align: center;
-    margin-bottom: 30px;
+
     position: relative;
 }
 
@@ -157,6 +162,14 @@ footer a:hover:after {
 
 }
 
+p#cv{
+    padding-top: 5%;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 0.8em;
+    font-weight: 400;
+    color: #ebe9e7;
+}
+
 .div1 p {
     text-align: justify;
     color: #fefefe;
@@ -177,6 +190,8 @@ footer a:hover:after {
     grid-template-columns: 1fr 1fr;
     grid-gap: 20px;
     background-color: black;
+    top: 50%;
+    left: 50%;
 }
 
 .portfolioPage h2 {
@@ -200,6 +215,8 @@ footer a:hover:after {
 
 .portfolioFooter {
     background-color: black;
+    margin-top: 30px;
+
 }
 
 .homeNav {
@@ -442,6 +459,8 @@ form {
         background-color: #f9f9f9;
     }
 }
+
+
 
 /**********Mobile Version***************/
 
