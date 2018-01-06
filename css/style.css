@@ -106,7 +106,7 @@ header {
     font-weight: 700;
 }
 
-#footer{
+#footer {
     margin-bottom: 1em;
 }
 
@@ -162,7 +162,7 @@ footer a:hover:after {
 
 }
 
-p#cv{
+p#cv {
     padding-top: 5%;
     font-family: 'Quicksand', sans-serif;
     font-size: 0.8em;
@@ -228,7 +228,8 @@ p#cv{
     opacity: 0.9;
     transition: all .3s ease;
 }
-div.themes{
+
+div.themes {
     margin-bottom: 5%;
 }
 
@@ -280,7 +281,7 @@ div.themes{
     padding-top: 1em;
 }
 
-.basic a{
+.basic a {
     font-weight: 700;
 }
 
@@ -499,7 +500,7 @@ form {
         float: right;
         right: 10px;
     }
-    .imgMe>img{
+    .imgMe > img {
         min-width: 12em;
     }
 
@@ -512,18 +513,17 @@ form {
         grid-auto-flow: column;
     }
     footer,
-    header{
+    header {
         font-size: 20px;
     }
 
 
-    nav a:after{
+    nav a:after {
         all: unset;
     }
-    nav a:hover:after{
+    nav a:hover:after {
         all: unset;
     }
-
 
     .basicWeb1 {
         grid-area: bWeb1;
@@ -555,6 +555,10 @@ form {
         grid-template-rows: auto;
         grid-gap: 10px;
         grid-template-areas: "bWeb1" "bWeb2" "bWeb3" "bWeb4" "bWeb5" "bWeb6";
+    }
+
+    .basicAni {
+        display: grid;
     }
 
     .basicAni1 {
